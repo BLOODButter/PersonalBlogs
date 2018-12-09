@@ -6,21 +6,22 @@
   width: 100%;
 }
 
-#header .title {
-  width: 400px;
-  margin: auto;
-  margin-top: 20px;
-  text-align: center;
-  font-size: xx-large;
+#header div {
   color: #fff;
+  height: 45px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  background-color: rgba(0,0,0,.3);
 }
 
 #nav-bar {
-  width: 100%;
   height: 45px;
-  background-color: #640000;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  z-index: 1000;
 }
 
 @-webkit-keyframes roll {
@@ -31,4 +32,12 @@
   to {
     -webkit-transform: rotate(1turn);
   }
+}
+
+body,html {
+  width: 100%;
+}
+
+#compact,body,html {
+  height: 100%;
 }

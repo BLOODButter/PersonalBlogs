@@ -24,7 +24,7 @@ const generateConfig = env => {
         outPublicPath;
 
     env === 'production'
-        ? (FontUrlLoaderPublicPath = './', ImgUrlLoaderPublicPath = './', outPublicPath = '../', spritePath = './dist/assets/sprites')
+        ? (FontUrlLoaderPublicPath = './', ImgUrlLoaderPublicPath = './dist', outPublicPath = '../', spritePath = './dist/assets/sprites')
         : (FontUrlLoaderPublicPath = '/', ImgUrlLoaderPublicPath = '/', outPublicPath = '/', spritePath = './dist/assets/sprites')
 
     const extractSass = new ExtractTextPlugin({
@@ -75,7 +75,7 @@ const generateConfig = env => {
             name: "[name].[ext]",
             useRelativePath: true,
             publicPath: ImgUrlLoaderPublicPath,
-            outputPath: './img/'
+            outputPath: '/'
         }
     }]
 
