@@ -25,7 +25,7 @@ const generateConfig = env => {
 
     env === 'production'
         ? (FontUrlLoaderPublicPath = './', ImgUrlLoaderPublicPath = './dist', outPublicPath = '../', spritePath = './dist/assets/sprites')
-        : (FontUrlLoaderPublicPath = '/', ImgUrlLoaderPublicPath = '/', outPublicPath = '/', spritePath = './dist/assets/sprites')
+        : (FontUrlLoaderPublicPath = '/', ImgUrlLoaderPublicPath = '', outPublicPath = '/', spritePath = './dist/assets/sprites')
 
     const extractSass = new ExtractTextPlugin({
         filename: "css/[name].[contenthash:8].css",
@@ -75,7 +75,8 @@ const generateConfig = env => {
             name: "[name].[ext]",
             useRelativePath: true,
             publicPath: ImgUrlLoaderPublicPath,
-            outputPath: '/'
+            // uesRelativePath: true,
+            outputPath: 'dist/'
         }
     }]
 

@@ -1,8 +1,6 @@
 
 import axios from 'axios';
 import common from "../../common/url.js";
-import "../../../assests/img/index/no1.jpg"
-import "../../../assests/img/index/ellipse.jpg"
 
 // import  '../../lib/jquery-3.3.1.min.js';
 var carousel = {

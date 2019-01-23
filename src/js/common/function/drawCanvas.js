@@ -5,10 +5,10 @@ import valueMapping from './valueMapping'
 export default drawCanvas
 
 function drawCanvas() {
-    console.log(1)
+    // console.log(1)
     var Cava = new Canvas("canvas");
     let canvas = Cava.init();
-    console.log(Cava)
+    // console.log(Cava)
     const gradients = [
         ['#b7472a', '#88d3ce'],
         ['#de6262', '#ffb88c'],

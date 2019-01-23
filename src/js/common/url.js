@@ -1,5 +1,5 @@
 const url = {
-	'url': '/blog'
-}
+	url: '/wzw'
+};
 
-module.exports = url
+module.exports = url;

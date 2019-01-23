@@ -1,5 +1,12 @@
 @import "./common/font/background";
 @import "./common/layout/header.scss";
 @import "./common/layout/nav-bar.scss";
+@import "./common/pages/contents.scss";
+@import "./common/layout/lists.scss";
+@import "./common/layout/article.scss";
 
-
+body{
+  position: inherit;
+  height: auto;
+  //overflow: hidden;
+}

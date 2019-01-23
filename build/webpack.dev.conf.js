@@ -17,10 +17,10 @@ module.exports = {
         // proxyTable: {},
 
         proxy: {
-            '/blog':{
-                target: 'http://ip:8080/wzw/',
+            '/wzw':{
+                target: 'http://118.24.107.139:8081/',
                 secure: false,
-                changeOrigin: true,
+                // changeOrigin: true,
             }
 
 

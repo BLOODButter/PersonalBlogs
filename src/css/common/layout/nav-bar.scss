@@ -1,59 +1,55 @@
+
+
+
 #nav-bar{
-	height: 45px;
 	/*background-color: rgba(2,31,46,0.3);*/
-	box-sizing: border-box;
-	position: absolute;
-	top:0;
-	z-index:1000;
-	
-	/*overflow: hidden;*/
-	ul li{
-			 height:45px;
+	ul{
+		list-style: none;
+		background-color: #111111;
+		padding-left: 0;
+		height: 100%;
+		margin-bottom: 0;
+		//margin-block-start: 1em;
+		margin-block-end: 1em;
+		margin-inline-start: 0px;
+		margin-inline-end: 0px;
+		padding-inline-start: 40px;
+		position: relative;
+		display: block;
+		li{
+			
+			
+			font-size: large;
 
-			 margin-left: 0;
-			list-style:none;/*去掉圆点*/
-			float:left;/*水平显示*/
 			a{
-				color:rgba(255,255,255,0.5);/* #fff */
+				cursor: pointer;
+				display: block;
+				height: 50px;
+				padding-left: 25px;
+				color: white;
+				line-height: 50px;
+				text-decoration: none;
 			}
-			text-decaration:none;
-			
-			font-size:14px;
-			font-family:"微软雅黑";
-			text-align:center;
-			line-height:45px;/* 行高跟 高度一致时，竖直居中*/
-			border-right:1px solid #000;/*右边框*/
-			width:100px;
-			border-radius: 5px;
-			
-			&:hover{
-				background:rgba(50,5,5,0.25);
-				ul{
-					display:block;
-					-webkit-animation:roll 1s ease;/*roll 旋转名称，1s旋转效果 */
-				}
-				@-webkit-keyframes roll /*roll旋转名称与上面一致*/
-				{
-					0% {-webkit-transform:rotate(0deg);}
-					100% {-webkit-transform:rotate(360deg);}
+		}
+		ul{
+			background-color: #222222;
+			height: auto!important;
+			//margin-left: 0;
+			overflow: auto;
+			margin-left: -40px;
+			opacity: 1;
+			li{
+				a{
+					padding-left: 55px;
 				}
 			}
-			ul{
-				display: none;
-				li{
-					border:none;
-					width: 100px;
-					text-align: center;
-					border-top:1px solid #989898;
-					background:rgba(10,5,5,0.45);/*颜色透明度 */
-					border-radius:10px;
-					&:hover{
-						background:rgba(100,0,0,0.8);/*颜色透明度 */
-						border-radius:10px;
-					}
-				}
-			}
+		}
 	}
-
+	.fade-enter-active, .fade-leave-active {
+	  transition: opacity .5s;
+	}
+	.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+	  opacity: 0;
+	}
 }
 

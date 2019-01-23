@@ -5,8 +5,11 @@ if (process.env.NODE_ENV !== 'production') {
 import '../css/indexCarousel.scss'
 
 import header from './common/header.js';
-import NavBar from './common/nav-bar.js';
-import carousel from './components/index/crousel.js'
+import content from './components/index/content.js';
+import 'vue-router';
+import router from './router/index.js'
+
+Vue.config.productionTip = false
 
 new Vue({
 	el: "#compact",
@@ -16,18 +19,12 @@ new Vue({
 
 	components: {
 		'v-header': header,
-		'v-nav-bar':NavBar,
-		'v-carousel':carousel,
-	}
+		'v-content':content,
+	},
+	router
 
 });
-$(document).ready(function(){
 
-var item = $(".carousel-item")[0]
-console.log(item)
-item.classList.add("active")
-$("[data-slide-to=0]")[0].classList.add("active")
 
-})
-// import './lib/bootstrap.min.js'
+
 

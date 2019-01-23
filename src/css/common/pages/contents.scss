@@ -1,0 +1,34 @@
+#content{
+
+	margin: auto;
+	//overflow: hidden;
+	background-color: white;
+	//position: fixed;
+	height: 100%;
+	width: 67.7%;
+	position: relative;
+	clear: both;
+	#nav-bar{
+		left: inherit;
+		position: fixed;
+		overflow: hidden;
+		box-sizing: border-box;
+		top:0;
+		z-index:1000;
+		float: left;
+		width: 220px;
+		height: 100%;
+	}
+	#lists,#article{
+		box-sizing: border-box;
+		//float: left;
+		//position: fixed;
+		overflow: hidden;
+		background: white fixed;
+		margin-left: 220px;
+		//width: auto;
+		display: block;
+		//height: 100%;
+		top:0;
+	}
+}
